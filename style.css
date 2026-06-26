@@ -1,0 +1,144 @@
+/* by Ali Ghandali */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #5b21b6, #7c3aed, #312e81);
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #ffffff20;
+  border-radius: 50%;
+  filter: blur(120px);
+  top: -100px;
+  left: -100px;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background: #9333ea55;
+  border-radius: 50%;
+  filter: blur(150px);
+  bottom: -150px;
+  right: -150px;
+}
+
+#div {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  padding: 40px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 18px;
+  color: #ddd;
+  margin-bottom: 25px;
+}
+
+#inp {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#inp::placeholder {
+  color: #ddd;
+}
+
+#inp:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 15px #ffffff55;
+}
+
+button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#btng {
+  background: linear-gradient(90deg, #8b5cf6, #6d28d9);
+  color: white;
+}
+
+#btng:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(139, 92, 246, 0.5);
+}
+
+#btns {
+  background: linear-gradient(90deg, #22c55e, #16a34a);
+  color: white;
+}
+
+#btns:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(34, 197, 94, 0.45);
+}
+
+#yon {
+  margin-top: 30px;
+  min-height: 50px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  transition: 0.4s;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 600px) {
+  #div {
+    width: 90%;
+    padding: 30px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
